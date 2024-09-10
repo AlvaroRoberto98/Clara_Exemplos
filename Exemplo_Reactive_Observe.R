@@ -1,4 +1,5 @@
 library(shiny)
+library(shinyWidgets)
 
 # UI part
 ui <- fluidPage(
