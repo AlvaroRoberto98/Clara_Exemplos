@@ -47,6 +47,7 @@ server <- function(input, output, session) {
       Name = input$movie_name,
       Genre = input$movie_genre,
       Rating = input$movie_rating,
+      # OBs.: caso Queira mudar a image padrão (jpg ou gif), trocar o link abaixo.
       Image = ifelse(input$movie_image != "", 
                      paste0('<img src="', input$movie_image, '" height="100">'), 
                      '<img src="https://media1.tenor.com/images/99ad5c42627f7733aaf5af3dc700c7f7/tenor.gif?itemid=15963112" height="100">'),
@@ -70,7 +71,6 @@ server <- function(input, output, session) {
         Name = input$movie_name,
         Genre = input$movie_genre,
         Rating = input$movie_rating,
-        # OBs.: caso Queira mudar a image padrão (jpg ou gif), trocar o link abaixo.
         Image = ifelse(input$movie_image != "", 
                        paste0('<img src="', input$movie_image, '" height="100">'), 
                        '<img src="https://media1.tenor.com/images/99ad5c42627f7733aaf5af3dc700c7f7/tenor.gif?itemid=15963112" height="100">'),
